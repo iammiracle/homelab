@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace.yml
+  - n8n.postgres.yml
+  - n8n.volume.yml
+  - n8n.deployment.yml
+  - n8n.service.yml

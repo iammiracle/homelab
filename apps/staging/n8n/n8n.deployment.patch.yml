@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: n8n
+  namespace: n8n
+spec:
+  template:
+    spec:
+      containers:
+        - name: n8n
+          env:
+            - name: N8N_HOST
+              value: n8n.home.arpa
+            - name: N8N_WEBHOOK_URL
+              value: http://n8n.home.arpa/
